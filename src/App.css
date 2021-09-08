@@ -23,6 +23,19 @@
   color: white;
   padding: 0 15px;
 }
+.App-footer {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 0 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 .App-link {
   color: #61dafb;
