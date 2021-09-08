@@ -1,28 +1,25 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import './App.css';
-import Appheader from './components/header';
-import Appfooter from './components/footer';
-import UserForm from './components/userform';
-import Characters from './pages/characters'
-;
-
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Appheader from "./components/header";
+import Appfooter from "./components/footer";
+import UserForm from "./components/userform";
+import Characters from "./pages/characters";
 
 function App() {
   return (
     <div className="App">
       <Appheader />
       <BrowserRouter>
-      <Switch>
-          <Route path="/test">
-          <UserForm />
-          </Route>
+        <Switch>
           <Route path="/characters">
-          <Characters />
+            <Characters />
+          </Route>
+          <Route path="/">
+            <UserForm />
           </Route>
         </Switch>
-     </BrowserRouter>
+      </BrowserRouter>
       <Appfooter />
-     
     </div>
   );
 }
